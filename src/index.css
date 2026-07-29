@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Ragick';
+  src: url('/fonts/ragick.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-display: 'Ragick', 'Archivo Variable', ui-sans-serif, sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-wide: 'Archivo Variable', 'Inter Variable', ui-sans-serif, sans-serif;
+
+  --color-ink: #0b0b0b;
+  --color-paper: #fbfaf7;
+  --color-cream: #f0ede3;
+  --color-sand: #cfc8b8;
+  --color-clay: #8d8677;
+  --color-flame: #ff5522;
+  --color-crimson: #dd2419;
+
+  --text-mega: clamp(4.2rem, 13vw, 11rem);
+  --text-mega--line-height: 0.86;
+  --text-huge: clamp(2.25rem, 7vw, 6rem);
+  --text-huge--line-height: 0.9;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html,
+  body {
+    overflow-x: clip;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background: var(--color-flame);
+    color: #fff;
+  }
+
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-ink) var(--color-cream);
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-cream);
+    border-left: 1px solid color-mix(in srgb, var(--color-ink) 12%, transparent);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-ink);
+    border: 3px solid var(--color-cream);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-flame);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: var(--color-cream);
+  }
+}
+
+@layer components {
+  .rule {
+    border-top: 1px solid color-mix(in srgb, var(--color-ink) 14%, transparent);
+  }
+
+  .eyebrow {
+    font-family: var(--font-wide);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
