@@ -3,7 +3,7 @@ import Reveal, { MaskReveal } from './Reveal'
 
 export default function Process() {
   return (
-    <section id="process" className="bg-paper py-16 md:py-24">
+    <section id="process" className="band [--band:var(--color-paper)] py-16 md:py-24">
       <div className="mx-auto max-w-375 px-5 md:px-10">
         <Reveal as="p" from="left" className="eyebrow mb-6 text-ink/50">
           {process.label}

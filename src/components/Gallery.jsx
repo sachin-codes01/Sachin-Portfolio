@@ -83,7 +83,7 @@ export default function Gallery() {
   }
 
   return (
-    <section id="gallery" className="bg-ink text-white">
+    <section id="gallery" className="band [--band:var(--color-void)] text-white">
       <div className="mx-auto max-w-375 px-5 pt-14 md:px-10 md:pt-20">
         <Reveal as="p" from="left" className="eyebrow mb-6 text-white/45 md:mb-8">
           Selected work — {projects.filter((p) => !p.isMore).length} projects
@@ -147,7 +147,7 @@ export default function Gallery() {
                   ))}
 
                   {project.isMore && (
-                    <span className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-3 bg-ink/70 p-4 text-center">
+                    <span className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-3 bg-void/70 p-4 text-center">
                       <ArrowOutwardIcon sx={{ fontSize: 28 }} />
                       <span className="font-display text-xl uppercase leading-tight tracking-[-0.01em] md:text-3xl">
                         {project.title}

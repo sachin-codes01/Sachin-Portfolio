@@ -1,15 +1,31 @@
 import { createTheme } from '@mui/material/styles'
 
 const ink = '#0b0b0b'
+const paperLight = '#fbfaf7'
+const inkDark = '#f2f0ea'
+const paperDark = '#14130f'
+const cardDark = '#1c1a15'
 const flame = '#ff5522'
 
 export const theme = createTheme({
-  cssVariables: true,
-  palette: {
-    primary: { main: ink, contrastText: '#ffffff' },
-    secondary: { main: flame, contrastText: '#ffffff' },
-    text: { primary: ink, secondary: 'rgba(11,11,11,0.6)' },
-    background: { default: '#fbfaf7', paper: '#ffffff' },
+  cssVariables: { colorSchemeSelector: 'class' },
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: { main: ink, contrastText: '#ffffff' },
+        secondary: { main: flame, contrastText: '#ffffff' },
+        text: { primary: ink, secondary: 'rgba(11,11,11,0.6)' },
+        background: { default: paperLight, paper: '#ffffff' },
+      },
+    },
+    dark: {
+      palette: {
+        primary: { main: inkDark, contrastText: '#0b0b0b' },
+        secondary: { main: flame, contrastText: '#ffffff' },
+        text: { primary: inkDark, secondary: 'rgba(242,240,234,0.6)' },
+        background: { default: paperDark, paper: cardDark },
+      },
+    },
   },
   shape: { borderRadius: 0 },
   typography: {
@@ -28,9 +44,11 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           background: 'transparent',
-          borderTop: '1px solid rgba(11,11,11,0.14)',
+          borderTop: 'color-mix(in srgb, var(--mui-palette-text-primary) 14%, transparent) solid 1px',
           '&::before': { display: 'none' },
-          '&:last-of-type': { borderBottom: '1px solid rgba(11,11,11,0.14)' },
+          '&:last-of-type': {
+            borderBottom: 'color-mix(in srgb, var(--mui-palette-text-primary) 14%, transparent) solid 1px',
+          },
         },
       },
     },
@@ -64,7 +82,7 @@ export const theme = createTheme({
       },
     },
     MuiDialog: {
-      styleOverrides: { paper: { borderRadius: 0, background: '#0b0b0b' } },
+      styleOverrides: { paper: { borderRadius: 0, background: ink, color: '#fff' } },
     },
   },
 })

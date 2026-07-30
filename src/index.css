@@ -20,11 +20,20 @@
   --color-clay: #8d8677;
   --color-flame: #ff5522;
   --color-crimson: #dd2419;
+  --color-void: #0b0b0b;
 
   --text-mega: clamp(4.2rem, 13vw, 11rem);
   --text-mega--line-height: 0.86;
   --text-huge: clamp(2.25rem, 7vw, 6rem);
   --text-huge--line-height: 0.9;
+}
+
+:root.dark {
+  --color-ink: #f2f0ea;
+  --color-paper: #14130f;
+  --color-cream: #1c1a15;
+  --color-sand: #2b2720;
+  --color-clay: #948d7c;
 }
 
 @layer base {
@@ -78,6 +87,18 @@
 }
 
 @layer components {
+  .band {
+    position: relative;
+  }
+
+  .band::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-color: var(--band);
+  }
+
   .rule {
     border-top: 1px solid color-mix(in srgb, var(--color-ink) 14%, transparent);
   }

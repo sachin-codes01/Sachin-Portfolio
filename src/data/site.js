@@ -25,6 +25,9 @@ import wpbmOpen from '../assets/projects/wpbm-open.jpg'
 import wpbmRest from '../assets/projects/wpbm-rest.jpg'
 import wpbmSlim from '../assets/projects/wpbm-slim.jpg'
 
+import profile1 from '../assets/projects/profile-1.png'
+import profile2 from '../assets/projects/profile-2.png'
+
 const img = (seed, w, h) => `https://picsum.photos/seed/${seed}/${w}/${h}`
 
 export const site = {
@@ -33,6 +36,7 @@ export const site = {
   email: 'sachin.codes01@gmail.com',
   location: 'Ghaziabad, Uttar Pradesh, India',
   whatsapp: '917217344896',
+  url: 'https://sachin-codes01-portfolio.netlify.app',
 }
 
 export const nav = [
@@ -44,10 +48,10 @@ export const nav = [
 ]
 
 export const socials = [
-  { label: 'Instagram', short: 'Ig', href: 'https://www.instagram.com/sachin_28022005' },
-  { label: 'Email', short: '@', href: 'mailto:sachin.codes01@gmail.com' },
-  { label: 'LinkedIn', short: 'In', href: 'https://www.linkedin.com/in/sachin-kumar-b814683a9' },
-  { label: 'GitHub', short: 'Gh', href: 'https://github.com/sachin-codes01' },
+  { label: 'Instagram', href: 'https://www.instagram.com/sachin_28022005' },
+  { label: 'Email', href: 'mailto:sachin.codes01@gmail.com' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/sachin-kumar-b814683a9' },
+  { label: 'GitHub', href: 'https://github.com/sachin-codes01' },
 ]
 
 export const hero = {
@@ -204,7 +208,7 @@ export const projects = [
 
 export const person = {
   heading: ["I'm also", 'a', 'real', 'person!'],
-  portrait: img('drummer', 900, 1100),
+  portrait: profile1,
   notes: [
     'I finished my BCA at Choudhary Charan Singh University in 2025 and picked up the MERN stack alongside it. Every project on this site I planned, built and deployed on my own.',
     'Code is not the only thing I make. I edit video in Premiere Pro and DaVinci Resolve, and reach for CapCut when something needs turning around fast.',
@@ -299,8 +303,8 @@ export const contact = {
     'Built properly, priced for small teams and first projects. No agency overheads, no account manager in the middle — you work with me directly, start to finish.',
   note: 'The more detail you give here, the more accurate the quote. Screenshots and links to sites you like help more than anything.',
   portrait: {
-    src: img('sachin-portrait', 800, 1000),
-    alt: 'Placeholder — replace with a photo of yourself',
+    src: profile2,
+    alt: 'Sachin Kumar',
     ratio: 'aspect-4/5',
   },
 }

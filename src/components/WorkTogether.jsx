@@ -40,7 +40,7 @@ export default function WorkTogether() {
   })
 
   return (
-    <section id="work-together" className="rule bg-cream py-16 md:py-24">
+    <section id="work-together" className="rule band [--band:var(--color-cream)] py-16 md:py-24">
       <div className="mx-auto max-w-375 px-5 md:px-10">
         <MaskReveal
           as="h2"

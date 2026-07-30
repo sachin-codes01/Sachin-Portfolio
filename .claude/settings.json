@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Browser__resize_window",
+      "mcp__Claude_Browser__navigate",
+      "Bash(npx vite *)",
+      "Bash(curl -s *)",
+      "mcp__Claude_Browser__read_console_messages",
+      "mcp__Claude_Browser__read_page",
+      "Bash(npm run lint)",
+      "Bash(npx oxlint *)",
+      "Bash(npm run dev)",
+      "Bash(npx expo *)",
+      "Bash(adb devices)",
+      "Bash(tasklist *)",
+      "mcp__Claude_Browser__find",
+      "mcp__Claude_Browser__get_page_text",
+      "mcp__Claude_Browser__read_network_requests"
+    ]
+  }
+}

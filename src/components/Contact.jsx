@@ -21,7 +21,7 @@ export default function Contact() {
   })
 
   return (
-    <section id="contact" className="rule bg-paper py-16 md:py-24">
+    <section id="contact" className="rule band [--band:var(--color-paper)] py-16 md:py-24">
       <div className="mx-auto max-w-375 px-5 md:px-10">
         <div className="grid gap-8 md:grid-cols-12 md:gap-8">
           <MaskReveal
@@ -63,7 +63,7 @@ export default function Contact() {
                 src={contact.portrait.src}
                 alt={contact.portrait.alt}
                 loading="lazy"
-                className="size-full object-cover grayscale"
+                className="size-full object-cover grayscale contrast-125"
               />
             </div>
             <p className="mt-4 max-w-xs text-[13px] leading-relaxed text-ink/60">{contact.note}</p>

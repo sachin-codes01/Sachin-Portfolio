@@ -14,7 +14,7 @@ function Note({ children, className = '' }) {
 
 export default function RealPerson() {
   return (
-    <section id="person" className="bg-cream py-16 md:py-24">
+    <section id="person" className="band [--band:var(--color-cream)] py-16 md:py-24">
       <div className="mx-auto max-w-375 px-5 md:px-10">
         <MaskReveal
           as="h2"
@@ -52,9 +52,9 @@ export default function RealPerson() {
             <div className="overflow-hidden bg-sand/40">
               <img
                 src={person.portrait}
-                alt="Behind the desk"
+                alt="Sachin Kumar"
                 loading="lazy"
-                className="aspect-4/5 w-full object-cover grayscale transition-transform duration-700 hover:scale-[1.03]"
+                className="aspect-4/5 w-full object-fill grayscale contrast-125 transition-transform duration-700 hover:scale-[1.03]"
               />
             </div>
           </Reveal>

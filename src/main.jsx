@@ -10,7 +10,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} defaultMode="light">
       <MotionConfig reducedMotion="user">
         <App />
       </MotionConfig>

@@ -4,7 +4,7 @@ import Reveal, { MaskReveal } from './Reveal'
 
 export default function Included() {
   return (
-    <section id="included" className="bg-cream py-16 md:py-24">
+    <section id="included" className="band [--band:var(--color-cream)] py-16 md:py-24">
       <div className="mx-auto max-w-375 px-5 md:px-10">
         <div className="grid gap-8 md:grid-cols-12">
           <div className="md:col-span-5">

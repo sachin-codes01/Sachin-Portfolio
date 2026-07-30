@@ -4,7 +4,7 @@ import Reveal from './Reveal'
 
 export default function About() {
   return (
-    <section id="about" className="overflow-hidden bg-cream pb-16 md:pb-28">
+    <section id="about" className="band [--band:var(--color-cream)] overflow-hidden pb-16 md:pb-28">
       <div className="mx-auto grid max-w-375 gap-10 px-5 md:grid-cols-12 md:gap-8 md:px-10">
         <Reveal from="left" className="md:col-span-3" amount={0.1} duration={1.1}>
           <h2 className="font-display text-[16vw] uppercase leading-[0.8] tracking-[-0.02em] text-crimson md:sticky md:top-24 md:[writing-mode:vertical-rl] md:rotate-180 md:text-[13vw]">

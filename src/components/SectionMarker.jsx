@@ -30,7 +30,7 @@ const labelSize = (label) => `clamp(2.6vw, calc(108vw / ${label.length}), 9vw)`
 export default function SectionMarker({ number, label }) {
   return (
     <Reveal from="up" amount={0.25}>
-      <div className="flex items-center gap-4 overflow-hidden bg-ink px-5 py-5 text-white md:gap-10 md:px-10 md:py-6">
+      <div className="flex items-center gap-4 overflow-hidden bg-void px-5 py-5 text-white md:gap-10 md:px-10 md:py-6">
         <Swap
           value={number}
           className="shrink-0 font-display text-[8vw] leading-none tabular-nums md:text-[9vw]"

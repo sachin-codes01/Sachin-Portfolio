@@ -9,7 +9,7 @@ export default function HowWeWork() {
   const [expanded, setExpanded] = useState(null)
 
   return (
-    <section id="work" className="bg-cream py-14 md:py-24">
+    <section id="work" className="band [--band:var(--color-cream)] py-14 md:py-24">
       <div className="mx-auto max-w-375 px-5 md:px-10">
         <Reveal as="p" from="left" className="eyebrow mb-8 text-ink/50 md:mb-14">
           {workHeading}
