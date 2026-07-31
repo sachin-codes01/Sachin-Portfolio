@@ -171,11 +171,11 @@ export const projects = [
     href: 'https://recipes-finder-webapp.netlify.app/',
   },
   {
-    title: 'Movie Search',
-    tag: 'Repo',
+    title: 'MegaMovies',
+    tag: 'Live site',
     year: '2025',
     shots: { open: movieOpen, rest: movieRest, slim: movieSlim },
-    href: 'https://github.com/sachin-codes01/Mini-Projects/tree/main/10_Movie_Search_App',
+    href: 'https://megamovies-webapp.netlify.app',
   },
   {
     title: 'Weather App',
