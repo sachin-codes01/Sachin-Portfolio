@@ -1,5 +1,21 @@
 # Sachin's Portfolio
 
+<p align="center">
+  <a href="https://sachin-codes01-portfolio.netlify.app"><img src="https://img.shields.io/badge/Live_Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" /></a>
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Material_UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material UI" />
+  <img src="https://img.shields.io/badge/Motion-FFF10E?style=for-the-badge&logo=framer&logoColor=black" alt="Motion" />
+  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Three.js" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/sachin-codes01/Sachin-Portfolio?style=flat-square&color=0f172a" alt="Last commit" />
+  <img src="https://img.shields.io/github/languages/top/sachin-codes01/Sachin-Portfolio?style=flat-square&color=f7df1e" alt="Top language" />
+  <img src="https://img.shields.io/github/repo-size/sachin-codes01/Sachin-Portfolio?style=flat-square&color=38bdf8" alt="Repo size" />
+</p>
+
 An editorial, single-page developer portfolio built with React 19 and Vite. Content-driven — every piece of copy, every link and every screenshot lives in one data file — with smooth inertial scrolling, scroll-triggered reveals and an interactive project gallery.
 
 ## 🌐 Live Demo
