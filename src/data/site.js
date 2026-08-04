@@ -17,6 +17,10 @@ import movieOpen from '../assets/projects/movie-open.png'
 import movieRest from '../assets/projects/movie-rest.png'
 import movieSlim from '../assets/projects/movie-slim.png'
 
+import vartalapahOpen from '../assets/projects/vartalapah-open.png'
+import vartalapahRest from '../assets/projects/vartalapah-rest.png'
+import vartalapahSlim from '../assets/projects/vartalapah-slim.png'
+
 import weatherOpen from '../assets/projects/weather-open.png'
 import weatherRest from '../assets/projects/weather-rest.png'
 import weatherSlim from '../assets/projects/weather-slim.png'
@@ -157,11 +161,18 @@ export const projects = [
     href: 'https://mdn-my-daily-nutrition.vercel.app/',
   },
   {
-    title: 'NexoChat',
+    title: 'Vartalapah Chatting WebApp',
+    tag: 'Live site',
+    year: '2026',
+    shots: { open: vartalapahOpen, rest: vartalapahRest, slim: vartalapahSlim },
+    href: 'https://vartalapah-chatting-webapp.vercel.app/chat',
+  },
+  {
+    title: 'MegaMovies',
     tag: 'Live site',
     year: '2025',
-    shots: { open: nexoOpen, rest: nexoRest, slim: nexoSlim },
-    href: 'https://nexochat.netlify.app/',
+    shots: { open: movieOpen, rest: movieRest, slim: movieSlim },
+    href: 'https://megamovies-webapp.netlify.app',
   },
   {
     title: 'Recipe Finder',
@@ -171,11 +182,11 @@ export const projects = [
     href: 'https://recipes-finder-webapp.netlify.app/',
   },
   {
-    title: 'MegaMovies',
+    title: 'NexoChat',
     tag: 'Live site',
     year: '2025',
-    shots: { open: movieOpen, rest: movieRest, slim: movieSlim },
-    href: 'https://megamovies-webapp.netlify.app',
+    shots: { open: nexoOpen, rest: nexoRest, slim: nexoSlim },
+    href: 'https://nexochat.netlify.app/',
   },
   {
     title: 'Weather App',
